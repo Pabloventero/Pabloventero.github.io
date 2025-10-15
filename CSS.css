@@ -11,6 +11,10 @@
     position: fixed;
     width: 100%;
     height: 10vh;
+    display: flex;                /* activamos flexbox */
+    align-items: center;          /* centrado vertical */
+    justify-content: center;      /* centrado horizontal */
+  
 }
 .contacto{
   position: fixed;
@@ -22,7 +26,7 @@
   right: 3vw;
   font-size: 1.5rem;
   color: rgb(211, 185, 36);
-  display: block;
+  display: flex;
 }
 .contacto a:visited {
   color: rgb(211, 185, 36);           /* color después de hacer clic */
@@ -40,6 +44,7 @@ a:active {
   font-size: 2rem; /* antes 30px */
   color: rgb(199, 146, 33);
   cursor: pointer;
+  display: flex;
 }
 .submenu {
   display: none;
@@ -114,7 +119,7 @@ a:active {
 
 /* LOGOTIPO */
 .cuadrados img {
-  max-width: 7vw; /* antes 100px */
+  max-width: 5vw; /* antes 100px */
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -137,7 +142,104 @@ body {
 }
 
 h2 {
+  font-family: 'Poppins', sans-serif;        /* Fuente moderna */
+  font-size: 3.5rem;                         /* Tamaño destacado */
+  font-weight: 800;                          /* Letra gruesa */
+  text-transform: uppercase;                 /* Todo en mayúsculas */
+  letter-spacing: 4px;                       /* Espaciado entre letras */
+  width: 100%;
+  text-align: center;                        /* Centrado */
+  color: transparent;                        /* Sin relleno */
+  -webkit-text-stroke: 2px #d4af37;          /* Contorno dorado */
+  position: relative;
+  display: inline-block;
+  margin: 40px auto;
+  transition: all 0.4s ease;                 /* Transición suave */
+  
+}
+
+/* Efecto moderno al pasar el mouse */
+h2:hover {
+  color: #d4af37;                            /* Se rellena dorado */
+  -webkit-text-stroke: 0;                    /* Desaparece el contorno */
+  transform: scale(1.03);                    /* Ligero aumento */
+  letter-spacing: 6px;                       /* Más aire al texto */
+}
+
+.texto{
+  margin:0% 5%;
+}
+.recomendacion {
   text-align: center;
-  margin-top: 5vh; /* antes 50px */
-  font-variant: unset;
+  padding: 2rem 0;
+}
+.recomendacion img {
+  width: 100%;
+  max-width: 500px;  /* cambia este valor según lo grande que quieras la imagen */
+  height: auto;
+  display: block;
+  margin: 0 auto;    /* centra la imagen */
+  border-radius: 10px; /* opcional, esquinas redondeadas */
+  object-fit: cover;   /* mantiene proporción si usas un contenedor fijo */
+}
+.filarecomendacion {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* espacio entre imágenes */
+  flex-wrap: wrap; /* para que se adapten en móviles */
+}
+.cocherecomendacion {
+  background-color: #fff;
+  color: #000000;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+}
+
+.cocherecomendacion:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+/* IMAGEN DEL COCHE */
+.cocherecomendacion img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* INFO BAJO LA IMAGEN */
+.info-coche {
+  padding: 1rem;
+}
+
+.info-coche h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.info-coche p {
+  color: #555;
+  margin: 0.3rem 0 1rem;
+}
+
+/* BOTÓN DE COMPRA */
+.btn-comprar {
+  background-color: #d4af37;
+  color: #000;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #b38e2a;
+  color: white;
 }
