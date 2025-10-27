@@ -11,10 +11,9 @@
     position: fixed;
     width: 100%;
     height: 10vh;
-    display: flex;                /* activamos flexbox */
-    align-items: center;          /* centrado vertical */
-    justify-content: center;      /* centrado horizontal */
-  
+    display: flex;                
+    align-items: center;          
+    justify-content: center;      
 }
 .contacto{
   position: fixed;
@@ -29,7 +28,7 @@
   display: flex;
 }
 .contacto a:visited {
-  color: rgb(211, 185, 36);           /* color después de hacer clic */
+  color: rgb(211, 185, 36);           
 }
 a,
 a:visited,
@@ -142,28 +141,18 @@ body {
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;        /* Fuente moderna */
-  font-size: 3.5rem;                         /* Tamaño destacado */
-  font-weight: 800;                          /* Letra gruesa */
-  text-transform: uppercase;                 /* Todo en mayúsculas */
-  letter-spacing: 4px;                       /* Espaciado entre letras */
+  font-family: 'Poppins', sans-serif;        
+  font-size: 3.5rem;                         
+  font-weight: 800;                          
+  text-transform: uppercase;                 
+  letter-spacing: 4px;                       
   width: 100%;
-  text-align: center;                        /* Centrado */
-  color: transparent;                        /* Sin relleno */
-  -webkit-text-stroke: 2px #d4af37;          /* Contorno dorado */
+  text-align: center;                        
+  color: transparent;                        
+  -webkit-text-stroke: 2px #d4af37;          
   position: relative;
   display: inline-block;
-  margin: 40px auto;
-  transition: all 0.4s ease;                 /* Transición suave */
-  
-}
-
-/* Efecto moderno al pasar el mouse */
-h2:hover {
-  color: #d4af37;                            /* Se rellena dorado */
-  -webkit-text-stroke: 0;                    /* Desaparece el contorno */
-  transform: scale(1.03);                    /* Ligero aumento */
-  letter-spacing: 6px;                       /* Más aire al texto */
+  margin: 40px auto; 
 }
 
 .texto{
