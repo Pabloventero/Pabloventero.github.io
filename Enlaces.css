@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.barra-superior{
+    background-color: black;
+    background-position:top;  
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    display: flex;                
+    align-items: center;          
+    justify-content: center;      
+}
+.contacto{
+  position: fixed;
+  text-decoration: none;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 0.1rem solid rgb(211, 185, 36);
+  padding: 0.5rem 1rem;
+  margin-top: 2vh;
+  right: 3vw;
+  font-size: 1.5rem;
+  color: rgb(211, 185, 36);
+  display: flex;
+}
+.contacto a:visited {
+  color: rgb(211, 185, 36);           
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+.menu-hamburguesa {
+  position: fixed;
+  margin-top: 2vh; /* antes 15px */
+  left: 2vw; /* antes 20px */
+  font-size: 2rem; /* antes 30px */
+  color: rgb(199, 146, 33);
+  cursor: pointer;
+  display: flex;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -2vw; /* antes -20px */
+  background-color: rgba(0, 0, 0, 0.5);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  min-width: 0;
+}
+.submenu li {
+  padding: 2vh 7vw; /* antes 20px 70px */
+}
+
+.submenu li a {
+  color: rgb(50, 72, 192);
+  text-decoration: none;
+  font-size: 1rem; /* antes 16px */
+  display: block;
+}
+
+.submenu li a:hover {
+  background-color: gold;
+  color: black;
+}
+
+/* Mostrar submenu al pasar encima */
+.menu-hamburguesa:hover .submenu {
+  display: block;
+}
+h2 {
+  font-family: 'Poppins', sans-serif;        
+  font-size: 3.5rem;                         
+  font-weight: 800;                          
+  text-transform: uppercase;                 
+  letter-spacing: 4px;                       
+  width: 100%;
+  text-align: center;                        
+  color: transparent;                        
+  -webkit-text-stroke: 2px #d4af37;          
+  position: relative;
+  display: inline-block;
+  margin: 6% auto; 
+}
+a{
+  width: 100%;
+  margin: 0% 10%;
+  
+}
