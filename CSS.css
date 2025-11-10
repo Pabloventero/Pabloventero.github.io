@@ -13,7 +13,8 @@
     height: 10vh;
     display: flex;                
     align-items: center;          
-    justify-content: center;      
+    justify-content: center; 
+    z-index: 4000;     
 }
 .contacto{
   position: fixed;
@@ -21,11 +22,11 @@
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   border: 0.1rem solid rgb(211, 185, 36);
   padding: 0.5rem 1rem;
-  margin-top: 2vh;
-  right: 3vw;
+  margin-top: 1.6vh;
+  right: 2vw;
   font-size: 1.5rem;
   color: rgb(211, 185, 36);
-  display: flex;
+  z-index: 4001;
 }
 .contacto a:visited {
   color: rgb(211, 185, 36);           
@@ -38,21 +39,21 @@ a:active {
 }
 .menu-hamburguesa {
   position: fixed;
-  margin-top: 2vh; /* antes 15px */
-  left: 2vw; /* antes 20px */
-  font-size: 2rem; /* antes 30px */
+  margin-top: 2vh; 
+  left: 2vw; 
+  font-size: 2rem; 
   color: rgb(199, 146, 33);
   cursor: pointer;
-  display: flex;
+  z-index: 4001;
 }
 .submenu {
   display: none;
   position: absolute;
-  top: 0;
-  left: -2vw; /* antes -20px */
-  background-color: rgba(0, 0, 0, 0.5);
+  top: -1vw;
+  left: -2vw; 
+  background-color: rgba(0, 0, 0, 1);
   list-style: none;
-  padding: 0;
+  padding: 8vw 12vw;
   margin: 0;
   border-radius: 0;
   min-width: 0;
@@ -77,8 +78,6 @@ a:active {
 .menu-hamburguesa:hover .submenu {
   display: block;
 }
-
-/* FONDO PRINCIPAL */
 .fondo {
   height: 100vh;
   width: 100%;
