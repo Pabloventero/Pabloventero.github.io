@@ -4,56 +4,53 @@
   box-sizing: border-box;
   background-color: black;
 }
-
 .barra-superior{
     background-color: black;
     background-position:top;  
     height: 100px;
     position: fixed;
     width: 100%;
-    height: 10vh;
+    height: 10%;
     display: flex;                
     align-items: center;          
-    justify-content: center;      
+    justify-content: center; 
+    z-index: 4000;     
 }
 .contacto{
   position: fixed;
   text-decoration: none;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  border: 0.1rem solid rgb(211, 185, 36);
-  padding: 0.5rem 1rem;
-  margin-top: 2vh;
-  right: 3vw;
+  border: 2px solid rgb(211, 185, 36);
+  padding: 0.6% 1.6%;
+  margin-top: 1.1%;
+  right: 1%;
   font-size: 1.5rem;
   color: rgb(211, 185, 36);
-  display: flex;
+  z-index: 4001;
 }
 .contacto a:visited {
   color: rgb(211, 185, 36);           
 }
-a,
-a:visited,
-a:hover,
-a:active {
+a,a:visited,a:hover,a:active {
   text-decoration: none;
 }
 .menu-hamburguesa {
   position: fixed;
-  margin-top: 2vh; /* antes 15px */
-  left: 2vw; /* antes 20px */
-  font-size: 2rem; /* antes 30px */
+  margin-top: 1.1%; 
+  left: 1%; 
+  font-size: 2rem; 
   color: rgb(199, 146, 33);
   cursor: pointer;
-  display: flex;
+  z-index: 4001;
 }
 .submenu {
   display: none;
   position: absolute;
-  top: 0;
-  left: -2vw; /* antes -20px */
-  background-color: rgba(0, 0, 0, 0.5);
+  top: -1vw;
+  left: -2vw; 
+  background-color: rgba(0, 0, 0, 1);
   list-style: none;
-  padding: 0;
+  padding: 8vw 12vw;
   margin: 0;
   border-radius: 0;
   min-width: 0;
@@ -94,6 +91,96 @@ h2 {
 }
 a{
   width: 100%;
-  margin: 0% 10%;
-  
+  margin: 0% 1%;
+}
+h3 {
+  font-family: 'Poppins', sans-serif;        
+  font-size: 3.5rem;                         
+  font-weight: 800;                          
+  text-transform: uppercase;                 
+  letter-spacing: 4px;                       
+  width: 100%;
+  text-align: center;                        
+  color: transparent;                        
+  -webkit-text-stroke: 2px #d4af37;          
+  position: relative;
+  display: inline-block;
+  margin: 6% auto; 
+}
+.amigos {
+  text-align: center;
+  padding: 2% 0;
+  z-index: 4001;
+}
+.amigos img {
+  width: 100%;
+  max-width: 500px;  /* cambia este valor según lo grande que quieras la imagen */
+  height: auto;
+  display: block;
+  margin: 0 auto;    /* centra la imagen */
+  border-radius: 10px; /* opcional, esquinas redondeadas */
+  object-fit: cover;   /* mantiene proporción si usas un contenedor fijo */
+}
+.filaamigos {
+  display: flex;
+  justify-content: center;
+  gap: 2%; /* espacio entre imágenes */
+  flex-wrap: wrap; /* para que se adapten en móviles */
+}
+.amigosrecomendacion {
+  background-color: #fff;
+  color: #000000;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+.amigosrecomendacion:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+/* IMAGEN DEL COCHE */
+.amigosrecomendacion img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* INFO BAJO LA IMAGEN */
+.infoamigos {
+  padding: 1rem;
+}
+
+.infoamigos h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.infoamigos p {
+  color: #555;
+  margin: 0.3rem 0 1rem;
+}
+
+/* BOTÓN DE COMPRA */
+.web {
+  background-color: #d4af37;
+  color: #000;
+  border: none;
+  padding: 0.7rem 1.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.web:hover {
+  background-color: #b38e2a;
+  color: white;
+}
+footer{
+  text-align: center;
+  color: white;
 }
