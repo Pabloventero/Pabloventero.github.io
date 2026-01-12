@@ -1,0 +1,82 @@
+/* Estilos específicos para la página de Gracias */
+.seccion-gracias {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor-gracias {
+    max-width: 500px;
+    padding: 50px;
+    border: 1px solid #d4af37;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+}
+
+.icono-exito {
+    font-size: 80px;
+    color: #d4af37;
+    margin-bottom: 20px;
+    border: 3px solid #d4af37;
+    width: 120px;
+    height: 120px;
+    line-height: 110px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+}
+
+.contenedor-gracias h1 {
+    color: white;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.contenedor-gracias p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.detalles-proximos {
+    background: rgba(212, 175, 55, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.detalles-proximos span {
+    color: #d4af37;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.detalles-proximos ul {
+    list-style: none;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.detalles-proximos ul li::before {
+    content: "• ";
+    color: #d4af37;
+}
+
+.volver-inicio {
+    text-align: center;
+    margin-top: 20px;
+}
+.volver-inicio a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+.volver-inicio a:hover {
+    color: #d4af37;
+}

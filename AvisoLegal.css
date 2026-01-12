@@ -1,0 +1,155 @@
+/* Contenedor del texto legal */
+.texto-legal {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Títulos de las secciones (1, 2, 3...) */
+.texto-legal h2 {
+    font-family: serif; /* Elegante como el footer */
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #000;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Cuerpo del texto */
+.texto-legal p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #555;
+}
+
+/* Resaltar datos importantes como la marca o CIF */
+.texto-legal strong {
+    color: #000;
+    font-weight: 600;
+}
+
+/* Responsive para que en móvil no quede pegado a los bordes */
+@media (max-width: 600px) {
+    .texto-legal {
+        margin: 30px auto;
+        line-height: 1.6;
+    }
+}
+
+
+
+.luxury-footer {
+    background-color: #000; /* Negro puro */
+    color: #fff;
+    padding: 60px 40px 20px 40px;
+    font-family: 'Arial', sans-serif; /* O una Serif elegante para los títulos */
+}
+
+/* Redes sociales arriba a la derecha */
+.footer-socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.footer-socials a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Contenedor principal de Menú y Marcas */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    border-bottom: 1px solid #333; /* Línea sutil */
+    padding-bottom: 40px;
+}
+
+.footer-main-column {
+    flex: 1;
+}
+
+.column-title {
+    font-family: serif; /* Para el toque de lujo */
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff; /* Línea blanca bajo el título */
+    display: block;
+    padding-bottom: 10px;
+}
+
+/* Sub-columnas internas */
+.sub-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-grid ul li {
+    margin-bottom: 12px;
+}
+
+.sub-grid ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* Parte Legal inferior */
+.footer-bottom {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.legal-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.legal-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    color: #ccc;
+}
+
+.copyright strong {
+    color: #007bff; /* Azul de Inventario Pro */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content, .footer-bottom, .sub-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-socials {
+        justify-content: center;
+    }
+}

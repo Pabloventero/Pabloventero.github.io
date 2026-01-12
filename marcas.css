@@ -3,32 +3,38 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-    background-image: url('ImagenesWeb/fondoMarcas.jfif'); 
+
+body {
+  font-family: sans-serif;
+  /* Reemplazamos background-color por esto: */
+  background-image: url('ImagenesWeb/fondoMarcas.jfif'); 
   
   /* Propiedades para que la imagen se vea perfecta */
   background-size: cover;       /* Cubre toda la pantalla sin deformarse */
   background-position: center;  /* Centra la imagen */
   background-attachment: fixed; /* La imagen se queda quieta al hacer scroll */
   background-repeat: no-repeat; /* No repite la imagen como un mosaico */
+  
+  padding-top: 100px; 
 }
-/* Configuración de la barra gris */
+
+/* --- BARRA DE NAVEGACIÓN --- */
 .barraNavegacion {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 1000;
   background-color: black;
   display: flex;
-  align-items: center; /* Centra verticalmente los elementos */
-  justify-content: space-between; /* Separa izquierda, centro y derecha */
-  padding: 0 20px;
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 0 40px;
   height: 80px;
-  font-family: sans-serif;
 }
 
-/* Contenedores de las secciones */
 .nav-section {
-  flex: 1; /* Hace que las 3 secciones midan lo mismo para centrar la imagen perfectamente */
+  flex: 1;
   display: flex;
   align-items: center;
 }
@@ -36,7 +42,7 @@ body{
 .center { justify-content: center; }
 .right { justify-content: flex-end; }
 
-/* Estilos del Menú Desplegable (Izquierda) */
+/* Menú Desplegable */
 .Menu {
   list-style: none;
   margin: 0;
@@ -73,9 +79,9 @@ body{
 
 .lista:hover .lista-content { display: block; }
 
-/* Estilo del Logo (Centro) */
+/* Logo */
 .logo {
-  height: 100px;
+  height: 100px; /* Tamaño ajustado para que respire en la barra de 80px */
   width: auto;
 }
 
@@ -96,103 +102,72 @@ body{
   color: black;
 }
 
-
-
-
-/* --- Contenido Principal --- */
-main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
+/* --- CUADRICULA DE MARCAS --- */
+.contenedor-marcas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-h2 {
-    text-align: center;
-    margin: 40px 0 20px;
-    font-size: 2rem;
-    color: #2c3e50;
-    border-bottom: 3px solid #e74c3c;
-    display: inline-block;
+.marca-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    /* Cambia el fondo sólido por uno con transparencia (blanco al 90%) */
+  background-color: rgba(255, 255, 255, 0.5); 
+  
 }
 
-.amigos {
-    text-align: center;
-    margin-bottom: 50px;
+.marca-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  border-color: gold;
 }
 
-/* --- Grid de Tarjetas --- */
-.filaamigos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+.logo-container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.cocherecomendacion {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 320px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+.logo-container img {
+  max-width: 150px;
+  max-height: 80px;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: all 0.4s ease;
 }
 
-.cocherecomendacion:hover {
-    transform: translateY(-10px);
+.marca-card:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
 }
 
-.cocherecomendacion img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover; /* Ajusta la imagen sin deformarla */
+.marca-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+  color: #111;
 }
 
-.infoamigos {
-    padding: 20px;
+.marca-card p {
+  font-size: 0.95rem;
+  color: black;
+  line-height: 1.5;
 }
-
-.infoamigos h3 {
-    margin-bottom: 10px;
-    color: #e74c3c;
-}
-
-.infoamigos p {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 20px;
-    height: 40px; /* Alinea los botones */
-}
-
-/* --- Botones --- */
-.web {
-    background-color: #2c3e50;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    padding: 0; /* Para que el <a> ocupe todo el botón */
-}
-
-.web a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    font-weight: bold;
-}
-
-.web:hover {
-    background-color: #34495e;
-}
-
-/* --- Footer --- */
-footer {
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-}
-
 
 
 
@@ -303,5 +278,3 @@ footer {
         justify-content: center;
     }
 }
-
-
