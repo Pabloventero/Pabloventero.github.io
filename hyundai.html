@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyundai</title>
-    <link rel="stylesheet" href="hyundai.css">
+    <link rel="stylesheet" href="plantillamarcas.css">
 </head>
 <body>
     <header>
@@ -16,46 +16,55 @@
                     <ul class="lista-content">
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="marcas.html">Nuestras marcas</a></li>
-                        <li><a href="/sitio3">Nuestras recomendaciones</a></li>
-                        <li><a href="/sitio1">Compramos tu coche</li><li><a href="enlaces.css">Enlaces de interes</a></li>
+                        <li><a href="contacto.html">Compramos tu coche</li><li><a href="enlaces.html">Enlaces de interes</a></li>
                     </ul>
                     </li>
                 </ul>
             </div>
             <div class="nav-section center">
-                <img src="ImagenesWeb/Logo.png" alt="Logo" class="logo">
+                <a href="index.html">
+                    <img src="ImagenesWeb/Logo.png" alt="Logo" class="logo">
+                </a>
             </div>
             <div class="nav-section right">
-                <a href="/destino" class="contactoBoton">Contacto</a>
+                <a href="contacto.html" class="contactoBoton">Contacto</a>
             </div>
         </nav>    
     </header>
-<main>
-    <div class="recomendacion">
-        <div class="filarecomendacion">
-            <div class="cocherecomendacion">
-            <img src="ImagenesWeb/HyundaiI30n.jpeg" alt="Coche Honda Civic" />
-                <div class="info-coche">
-                <h3>Hyundai I30N</h3>
-                <p>Desde 45.000€</p>
-                <button class="btn-comprar">Me interesa</button>
-                </div>
-            </div>
-
-            <div class="cocherecomendacion">
-            <img src="ImagenesWeb/HyundaiTucson.jpeg" alt="Coche Ford Focus" />
-                <div class="info-coche">
-                <h3>Hyundai Tucson</h3>
-                <p>Desde 37.000€</p>
-                <button class="btn-comprar">Me interesa</button>
-                </div>
-            </div>
-
-            </div>
-
+    <main>
+        <section class="fondo-marca ajuste-inferior" style="background-image: url('ImagenesWeb/fondohyundai.jpg');">
+        <div class="hero-overlay">
+            <h1 class="hero-title">HYUNDAI</h1>
+            <p class="hero-subtitle">La excelencia en cada detalle</p>
         </div>
-        </main>
-<footer class="footer">
+    </section>
+
+    <section class="recomendacion">
+        <h2 class="titulo-seccion">Modelos en Stock</h2>
+        <div class="filarecomendacion">
+            
+            <article class="cocherecomendacion">
+                <img src="ImagenesWeb/HyundaiI30n.jpeg" alt="Modelo 1">
+                <div class="info-coche">
+                    <h3>Hyundai I30n</h3>
+                    <p class="precio">Desde 35.000€</p>
+                    <a href="contacto.html" class="btn-comprar">Me interesa</a>
+                </div>
+            </article>
+
+            <article class="cocherecomendacion">
+                <img src="ImagenesWeb/HyundaiTucson.jpeg" alt="Modelo 2">
+                <div class="info-coche">
+                    <h3>Hyundai Tucson</h3>
+                    <p class="precio">Desde 52.000€</p>
+                    <a href="contacto.html" class="btn-comprar">Me interesa</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer">
     <div class="RedesSociales">
         <a href="#">FACEBOOK</a>
         <a href="#">INSTAGRAM</a>
@@ -69,14 +78,12 @@
             <h3 class="titulo">Menú</h3>
             <div class="contenido1">
                 <ul>
-                    <li><a href="#">¿QUIENES SOMOS?</a></li>
+                    <li><a href="index.html">INICIO</a></li>
                     <li><a href="marcas.html">NUESTRAS MARCAS</a></li>
-                    <li><a href="#">RECOMENDACIONES</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#">COMPRAR SEMINUEVOS</a></li>
-                    <li><a href="#">VENDER TU COCHE</a></li>
-                    <li><a href="#">GALERIA</a></li>
+                    <li><a href="https://oscarmg2912.github.io/" target="_blank">COMPRAR SEMINUEVOS</a></li>
+                    <li><a href="contacto.html">VENDER TU COCHE</a></li>
                 </ul>
             </div>
         </div>
@@ -110,4 +117,3 @@
     </div>
 </footer>
 </body>
-</html>

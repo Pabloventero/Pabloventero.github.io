@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 body {
-    background: radial-gradient(circle at center, #1a1a1a 0%, #000 100%);
+    background-color: #000;
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
-
 /* Configuración de la barra gris */
 .barraNavegacion {
     position: fixed;
@@ -100,90 +98,142 @@ body {
   color: black;
 }
 
-/* --- Contenido de Enlaces --- */
-.seccion-enlaces {
-    padding-top: 120px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 60px;
+
+
+
+/* 1. SECCIÓN BANNER (Fondo con texto) */
+.fondo-marca {
+    height: 60vh; /* Altura del banner */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efecto Parallax elegante */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.ajuste-inferior {
+    background-position: center bottom;
 }
 
-.titulo-principal {
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Capa oscura para que el texto se lea bien */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+}
+
+.hero-subtitle {
+    color: #d4af37; /* Dorado */
+    letter-spacing: 5px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* 2. CUADRÍCULA DE COCHES */
+.recomendacion {
+    padding: 80px 20px;
+    background: #000;
+}
+
+.titulo-seccion {
     text-align: center;
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    color: #d4af37;
+    font-size: 2.5rem;
     margin-bottom: 50px;
+    color: #fff;
 }
 
-.subtitulo-seccion {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    border-left: 4px solid #d4af37;
-    padding-left: 15px;
-    margin: 40px 20px 30px;
-}
-
-.filaamigos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.filarecomendacion {
+    display: flex;
+    justify-content: center;
     gap: 30px;
-    padding: 0 20px;
+    flex-wrap: wrap; /* Para que bajen si no caben en pantalla */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.tarjeta-enlace {
-    background: #111;
+.cocherecomendacion {
+    background: #0a0a0a;
     border: 1px solid #222;
-    border-radius: 12px;
+    width: 350px;
+    border-radius: 10px;
     overflow: hidden;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
-.tarjeta-enlace:hover {
-    transform: translateY(-10px);
-    border-color: #d4af37;
-    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.1);
+.cocherecomendacion:hover {
+    border-color: #d4af37; /* El borde se vuelve dorado al pasar el ratón */
+    transform: translateY(-10px); /* Se eleva un poco */
 }
 
-.tarjeta-enlace img {
+.cocherecomendacion img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
 }
 
-.infoamigos {
-    padding: 20px;
+.info-coche {
+    padding: 25px;
     text-align: center;
 }
 
-.infoamigos h3 {
+.info-coche h3 {
+    font-size: 1.4rem;
     margin-bottom: 10px;
-    color: #d4af37;
 }
 
-.infoamigos p {
-    font-size: 0.9rem;
-    color: #ccc;
-    margin-bottom: 20px;
-    height: 45px; /* Mantiene los botones alineados */
-}
-
-.btn-web {
-    display: inline-block;
-    padding: 10px 25px;
-    background: transparent;
-    border: 1px solid #d4af37;
+.precio {
     color: #d4af37;
-    text-decoration: none;
-    border-radius: 5px;
     font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-comprar {
+    display: inline-block;
+    background: #d4af37;
+    color: #000;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 5px;
     transition: 0.3s;
 }
 
-.btn-web:hover {
-    background: #d4af37;
+.btn-comprar:hover {
+    background: #fff;
     color: #000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
     background-color: #000; /* Negro puro */
