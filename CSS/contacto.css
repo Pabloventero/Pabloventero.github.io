@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Configuración de la barra gris */
+.barraNavegacion {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    /* Efecto cristal: negro con transparencia y desenfoque */
+    background-color: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 80px;
+    font-family: sans-serif;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2); /* Línea dorada muy sutil */
+}
+
+/* Contenedores de las secciones */
+.nav-section {
+  flex: 1; /* Hace que las 3 secciones midan lo mismo para centrar la imagen perfectamente */
+  display: flex;
+  align-items: center;
+}
+
+.center { justify-content: center; }
+.right { justify-content: flex-end; }
+
+/* Estilos del Menú Desplegable (Izquierda) */
+.Menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.botonLista {
+  color: gold;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.lista-content {
+  display: none;
+  position: absolute;
+  top: 45px; /* Ajusta según la altura de tu barra */
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  list-style: none;
+  padding: 0;
+  z-index: 10;
+}
+
+.lista-content li a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.lista-content li a:hover { background-color: #ddd; }
+
+.lista:hover .lista-content { display: block; }
+
+/* Estilo del Logo (Centro) */
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+/* Estilo del Botón (Derecha) */
+.contactoBoton {
+    background-color: rgba(212, 175, 55, 0.1);
+    border: solid 1px #d4af37;
+    color: #d4af37;
+    padding: 10px 24px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.contactoBoton:hover {
+  background-color: gold;
+  color: black;
+}
+
+
+
+
+
+
+
+/* Contenedor que centra todo en la pantalla */
+.seccion-contacto {
+    background-color: black;
+    color: white;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* La caja blanca/gris del formulario */
+.contenedor-formulario {
+    background-color: #1a1a1a; /* Un gris muy oscuro */
+    padding: 40px;
+    width: 100%;
+    max-width: 600px; /* Para que no se haga gigante en PC */
+    border: 2px solid #d4af37; /* Borde dorado */
+    border-radius: 10px;
+}
+
+/* Títulos */
+.titulo-contacto {
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* Estilo para cada bloque (Label + Input) */
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block; /* Para que el nombre salga arriba del cuadro */
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Estilo para todos los cuadros de escritura y el select */
+.campo input, 
+.campo select, 
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* Cuando el usuario hace clic en un cuadro para escribir */
+.campo input:focus {
+    border-color: #d4af37;
+    outline: none;
+}
+
+.campo-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+}
+.campo-check a {
+    color: #d4af37;
+}
+
+/* El botón de enviar */
+.boton-enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: #d4af37;
+    color: black;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.boton-enviar:hover {
+    background-color: white;
+}
+.volver-inicio {
+    text-align: center;
+    margin-top: 20px;
+}
+.volver-inicio a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+.volver-inicio a:hover {
+    color: #d4af37;
+}
+
+
+
+
+
+
+.footer {
+    background-color: #000; /* Negro puro */
+    color: #fff;
+    padding: 60px 40px 20px 40px;
+    font-family: 'Arial', sans-serif; /* O una Serif elegante para los títulos */
+}
+
+/* Redes sociales arriba a la derecha */
+.RedesSociales {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.RedesSociales a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Contenedor principal de Menú y Marcas */
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    border-bottom: 1px solid #333; /* Línea sutil */
+    padding-bottom: 40px;
+}
+
+.columna {
+    flex: 1;
+}
+
+.titulo {
+    font-family: serif; /* Para el toque de lujo */
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff; /* Línea blanca bajo el título */
+    display: block;
+    padding-bottom: 10px;
+    color: white;
+}
+
+/* Sub-columnas internas */
+.contenido1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contenido1 ul li {
+    margin-bottom: 12px;
+}
+
+.contenido1 ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* Parte Legal inferior */
+.Legal {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.legallinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.legallinks a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    color: #ccc;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content, .footer-bottom, .sub-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-socials {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,76 @@
+/* Configuración de la barra gris */
+.navbar {
+  background-color: #333;
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Separa izquierda, centro y derecha */
+  padding: 0 20px;
+  height: 60px;
+  font-family: sans-serif;
+}
+
+/* Contenedores de las secciones */
+.nav-section {
+  flex: 1; /* Hace que las 3 secciones midan lo mismo para centrar la imagen perfectamente */
+  display: flex;
+  align-items: center;
+}
+
+.center { justify-content: center; }
+.right { justify-content: flex-end; }
+
+/* Estilos del Menú Desplegable (Izquierda) */
+.menu-principal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropbtn {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 45px; /* Ajusta según la altura de tu barra */
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  list-style: none;
+  padding: 0;
+  z-index: 10;
+}
+
+.dropdown-content li a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover { background-color: #ddd; }
+
+.dropdown:hover .dropdown-content { display: block; }
+
+/* Estilo del Logo (Centro) */
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+/* Estilo del Botón (Derecha) */
+.btn-directo {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.btn-directo:hover {
+  background-color: #0056b3;
+}
