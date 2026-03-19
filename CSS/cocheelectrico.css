@@ -355,9 +355,12 @@ main {
 
     .RedesSociales {
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
         margin-bottom: 30px;
     }
 
+    /* Apilar las columnas del footer */
     .contenido {
         flex-direction: column;
         gap: 30px;
@@ -370,7 +373,7 @@ main {
     }
 
     .contenido1 {
-        flex-direction: column;
+        flex-direction: column; /* Cambia a una lista vertical */
         align-items: center;
         gap: 15px;
         text-align: center;
@@ -385,7 +388,7 @@ main {
 
     .legallinks {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Apila Privacidad, Legal y Cookies */
         gap: 15px;
     }
 }
