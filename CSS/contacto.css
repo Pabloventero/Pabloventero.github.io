@@ -299,14 +299,59 @@
 }
 
 
+/*RESPONSIVE (max-width: 480px)*/
 
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-content, .footer-bottom, .sub-grid {
-        flex-direction: column;
-        gap: 30px;
+@media (max-width: 480px) {
+    /* NAVBAR Y FOOTER (Mantenemos consistencia) */
+    .barraNavegacion { padding: 0 15px; height: 60px; }
+    .logo { height: 40px; }
+    .contactoBoton { padding: 6px 10px; font-size: 0.6rem; }
+    .lista-content { min-width: 100vw; left: -15px; top: 60px; }
+
+    /* CUERPO DE CONTACTO */
+    .cuerpo-contacto {
+        padding: 100px 15px 40px;
     }
-    .footer-socials {
-        justify-content: center;
+
+    .cuerpo-contacto h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
     }
+
+    .subtitulo-contacto {
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+    }
+
+    /* FORMULARIO */
+    .formulario-contacto {
+        padding: 25px 15px;
+        margin: 0 auto;
+    }
+
+    .grupo-formulario {
+        margin-bottom: 15px;
+    }
+
+    .grupo-formulario label {
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+    }
+
+    .grupo-formulario input, 
+    .grupo-formulario select, 
+    .grupo-formulario textarea {
+        padding: 12px; /* Más espacio para tocar con el dedo */
+        font-size: 16px; /* Evita que iOS haga zoom automático al enfocar */
+    }
+
+    .boton-enviar {
+        width: 100%;
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    /* FOOTER (Apilado) */
+    .contenido, .contenido1, .Legal { flex-direction: column; text-align: center; gap: 20px; }
+    .legallinks { display: flex; flex-direction: column; gap: 15px; }
 }

@@ -80,3 +80,41 @@
 .volver-inicio a:hover {
     color: #d4af37;
 }
+
+
+/*RESPONSIVE (max-width: 480px)*/
+
+@media (max-width: 480px) {
+    .seccion-gracias {
+        padding: 15px;
+    }
+
+    .contenedor-gracias {
+        padding: 30px 20px;
+        width: 100%;
+    }
+
+    .icono-exito {
+        width: 90px;
+        height: 90px;
+        font-size: 50px;
+        line-height: 85px;
+        margin-bottom: 20px;
+    }
+
+    .contenedor-gracias h1 {
+        font-size: 1.5rem;
+    }
+
+    .contenedor-gracias p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .boton-volver {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}

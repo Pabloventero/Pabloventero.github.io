@@ -307,14 +307,44 @@ body{
 }
 
 
+/*RESPONSIVE (max-width: 480px)*/
 
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-content, .footer-bottom, .sub-grid {
-        flex-direction: column;
-        gap: 30px;
+@media (max-width: 480px) {
+    /* NAVBAR */
+    .barraNavegacion { padding: 0 15px; height: 60px; }
+    .logo { height: 40px; }
+    .contactoBoton { padding: 6px 10px; font-size: 0.6rem; }
+
+    /* CONTENIDO PRINCIPAL */
+    main { padding-top: 80px; }
+
+    .titulo-principal {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        padding: 0 15px;
     }
-    .footer-socials {
-        justify-content: center;
+
+    /* GRID DE MOTORES */
+    .grid-motores {
+        grid-template-columns: 1fr; /* Una columna para evitar que las tarjetas sean muy estrechas */
+        gap: 20px;
+        padding: 15px;
     }
+
+    .tarjeta-motor {
+        padding: 25px 15px;
+    }
+
+    .tarjeta-motor h2 {
+        font-size: 1.4rem;
+    }
+
+    .tarjeta-motor p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    /* FOOTER */
+    .contenido, .contenido1, .Legal { flex-direction: column; text-align: center; gap: 20px; }
+    .legallinks { display: flex; flex-direction: column; gap: 15px; }
 }

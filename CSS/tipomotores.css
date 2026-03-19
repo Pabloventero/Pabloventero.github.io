@@ -386,14 +386,46 @@ main {
 }
 
 
+/*RESPONSIVE (max-width: 480px)*/
 
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-content, .footer-bottom, .sub-grid {
-        flex-direction: column;
-        gap: 30px;
+@media (max-width: 480px) {
+    /* NAVBAR */
+    .barraNavegacion { padding: 0 15px; height: 60px; }
+    .logo { height: 40px; }
+
+    /* SECCIÓN EXPLICATIVA */
+    .contenedor-tipo-motor {
+        padding: 90px 15px 30px;
     }
-    .footer-socials {
-        justify-content: center;
+
+    .header-motor h1 {
+        font-size: 1.7rem;
+        letter-spacing: 1px;
     }
+
+    /* Bloques de Ventajas/Desventajas o Detalles */
+    .seccion-comparativa {
+        flex-direction: column; /* Apilamos las cajas de texto */
+        gap: 20px;
+    }
+
+    .caja-info {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .caja-info h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Imágenes de diagramas o motores */
+    .imagen-motor-detalle {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    /* FOOTER */
+    .contenido, .contenido1, .Legal { flex-direction: column; text-align: center; gap: 25px; }
+    .legallinks { display: flex; flex-direction: column; gap: 15px; }
 }

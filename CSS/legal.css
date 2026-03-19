@@ -241,14 +241,100 @@ header h1 {
 }
 
 
+/*RESPONSIVE (max-width: 480px)*/
 
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-content, .footer-bottom, .sub-grid {
+@media (max-width: 480px) {
+    /* NAVBAR */
+    .barraNavegacion {
+        padding: 0 15px;
+        height: 60px;
+    }
+
+    .botonLista {
+        font-size: 28px;
+        padding: 5px;
+    }
+
+    /* Menú desplegable adaptado */
+    .lista-content {
+        min-width: 100vw;
+        left: -15px;
+        top: 60px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    .contactoBoton {
+        padding: 6px 10px;
+        font-size: 0.65rem;
+    }
+
+    /* CONTENIDO LEGAL */
+    header h1 {
+        padding: 100px 15px 30px; /* Ajuste del espacio superior */
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .texto-legal {
+        margin: 20px auto;
+        padding: 0 15px;
+        text-align: left; /* En móviles el texto justificado suele dejar huecos feos */
+    }
+
+    .texto-legal h2 {
+        font-size: 1.2rem;
+        margin-top: 30px;
+    }
+
+    .texto-legal p, .texto-legal li {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 30px 20px 20px;
+    }
+
+    .RedesSociales {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    /* Apilar las columnas del footer */
+    .contenido {
         flex-direction: column;
         gap: 30px;
+        padding-bottom: 30px;
     }
-    .footer-socials {
-        justify-content: center;
+
+    .titulo {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .contenido1 {
+        flex-direction: column; /* Cambia a una lista vertical */
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .Legal {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .legallinks {
+        display: flex;
+        flex-direction: column; /* Apila Privacidad, Legal y Cookies */
+        gap: 15px;
     }
 }

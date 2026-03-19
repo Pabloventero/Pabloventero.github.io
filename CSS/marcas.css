@@ -268,19 +268,127 @@ h1 {
 
 
 
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-content, .footer-bottom, .sub-grid {
+/*RESPONSIVE (max-width: 480px)*/
+
+@media (max-width: 480px) {
+    /* NAVBAR */
+    .barraNavegacion {
+        padding: 0 15px;
+        height: 60px;
+    }
+
+    .botonLista {
+        font-size: 28px;
+        padding: 5px;
+    }
+
+    /* Menú desplegable a pantalla completa */
+    .lista-content {
+        min-width: 100vw;
+        left: -15px;
+        top: 60px;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.8);
+    }
+
+    .lista-content li a {
+        text-align: center;
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    /* Botón de contacto reducido pero visible */
+    .contactoBoton {
+        padding: 6px 10px;
+        font-size: 0.6rem;
+    }
+
+    /* CONTENIDO PRINCIPAL */
+    main {
+        padding-top: 90px; /* Reducimos el espacio superior para no perder mucha pantalla */
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+        padding: 0 15px;
+    }
+
+    /* GRID DE TARJETAS */
+    .grid-container {
+        /* Forzamos a una sola columna fluida para evitar scroll horizontal en móviles muy pequeños */
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .tarjeta {
+        padding: 30px 15px; /* Reducimos el padding interno de la tarjeta */
+    }
+
+    .logo-container {
+        height: 80px;
+        margin-bottom: 15px;
+    }
+
+    .logo-container img {
+        max-width: 120px;
+        max-height: 60px;
+    }
+
+    .tarjeta h3 {
+        font-size: 1.5rem;
+    }
+
+    .tarjeta p {
+        font-size: 0.85rem;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 30px 20px 20px;
+    }
+
+    .RedesSociales {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    /* Apilar las columnas del footer */
+    .contenido {
         flex-direction: column;
         gap: 30px;
+        padding-bottom: 30px;
     }
-    .footer-socials {
-        justify-content: center;
+
+    .titulo {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .contenido1 {
+        flex-direction: column; /* Cambia a una lista vertical */
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .Legal {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .legallinks {
+        display: flex;
+        flex-direction: column; /* Apila Privacidad, Legal y Cookies */
+        gap: 15px;
     }
 }
-
-
-
-
-
-
