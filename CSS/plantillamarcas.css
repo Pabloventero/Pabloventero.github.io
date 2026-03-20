@@ -112,6 +112,25 @@ body {
     justify-content: center;
     position: relative;
 }
+.fondo-audi    { 
+    background-image: url('../ImagenesWeb/fondoaudi.jpg'); 
+}
+.fondo-bmw{
+    background-image: url('../ImagenesWeb/fondobmw.jfif'); 
+}
+.fondo-ford{
+    background-image: url('../ImagenesWeb/fondoford.avif'); 
+}
+.fondo-honda{
+    background-image: url('../ImagenesWeb/fondohonda.jpg'); 
+}
+.fondo-hyundai{
+    background-image: url('../ImagenesWeb/fondohyundai.jpg'); 
+}
+.fondo-mercedes{
+    background-image: url('../ImagenesWeb/fondomercedes.jpg'); 
+}
+
 .ajuste-inferior {
     background-position: center bottom;
 }

@@ -5,6 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ford</title>
     <link rel="stylesheet" href="../CSS/plantillamarcas.css">
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Modelos Ford en NextRide",
+    "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Car",
+        "name": "Ford Focus",
+        "image": "https://pabloventero.github.io/ImagenesWeb/FordFocus.png",
+        "brand": { "@type": "Brand", "name": "Ford" },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "29500",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Car",
+        "name": "Ford Mustang",
+        "image": "https://pabloventero.github.io/ImagenesWeb/FordMustang.jpeg",
+        "brand": { "@type": "Brand", "name": "Ford" },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "45000",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
     <header>
@@ -32,7 +73,7 @@
         </nav>    
     </header>
     <main>
-        <section class="fondo-marca" style="background-image: url('../ImagenesWeb/fondoford.avif');">
+        <section class="fondo-marca fondo-ford">
         <div class="hero-overlay">
             <h1 class="hero-title">FORD</h1>
             <p class="hero-subtitle">La excelencia en cada detalle</p>

@@ -550,6 +550,8 @@ h2 {
 
     .fondo1 {
         height: 100svh; 
+        background-image: url('../ImagenesWeb/i30portadaMovil.webp');
+        background-attachment: scroll;
     }
 
     .hero-title {

@@ -5,6 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMW</title>
     <link rel="stylesheet" href="../CSS/plantillamarcas.css">
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Modelos BMW en NextRide",
+    "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Car",
+        "name": "BMW M4",
+        "image": "https://pabloventero.github.io/ImagenesWeb/BmwM4.jpeg",
+        "brand": { "@type": "Brand", "name": "BMW" },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "29500",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Car",
+        "name": "BMW X6",
+        "image": "https://pabloventero.github.io/ImagenesWeb/BmwX6.jpeg",
+        "brand": { "@type": "Brand", "name": "BMW" },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "45000",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
     <header>
@@ -32,7 +73,7 @@
         </nav>    
     </header>
     <main>
-        <section class="fondo-marca ajuste-inferior" style="background-image: url('../ImagenesWeb/fondobmw.jfif');">
+        <section class="fondo-marca fondo-bmw">
         <div class="hero-overlay">
             <h1 class="hero-title">BMW</h1>
             <p class="hero-subtitle">La excelencia en cada detalle</p>
